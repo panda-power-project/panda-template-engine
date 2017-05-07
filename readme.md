@@ -3,6 +3,7 @@
 ## Panda-Template-Engine
 This repo is running on Google's Starter Web Kit
 Pull the repo, npm install, `gulp serve`
+Templating engine uses Pug.js: `npm run pugify {fileName}`
 
 ## Overview
 

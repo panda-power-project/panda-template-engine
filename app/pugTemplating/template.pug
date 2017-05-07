@@ -1,0 +1,122 @@
+doctype html
+html(lang="en")
+  head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='description', content='')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      title='Panda Project Prototype Page'
+      meta(name='msapplication-tap-highlight', content='no')
+      link(rel='manifest', href='manifest.json')
+      meta(name='mobile-web-app-capable', content='yes')
+      meta(name='application-name', content='Web Starter Kit')
+      link(rel='icon', sizes='192x192', href='images/touch/chrome-touch-icon-192x192.png')
+      meta(name='apple-mobile-web-app-capable', content='yes')
+      meta(name='apple-mobile-web-app-status-bar-style', content='black')
+      meta(name='apple-mobile-web-app-title', content='Web Starter Kit')
+      link(rel='apple-touch-icon', href='images/touch/apple-touch-icon.png')
+      meta(name='msapplication-TileImage', content='images/touch/ms-touch-icon-144x144-precomposed.png')
+      meta(name='msapplication-TileColor', content='#2F3BA2')
+      meta(name='theme-color', content='#2F3BA2')
+      link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+      link(rel='stylesheet', href='./main.css')
+  body
+    .hero.is-dark.is-bold.is-fullheight
+      .hero-head
+          header.nav
+            .container
+              .nav-left
+                a.nav-item
+                  | YOUR LOGO
+              span.nav-toggle
+                span
+                span
+                span
+              .nav-right.nav-menu
+                a.nav-item.is-active
+                  | About
+                a.nav-item
+                  | Portfolio
+                a.nav-item
+                  | Contact
+      .hero-body(style="background-image: url('https://s3-ap-southeast-1.amazonaws.com/joshen.me/assets/headerBanner.jpg')")
+        .container.has-text-centered
+          h1.title.is-1
+            if header
+              | #{header}
+            else
+              | Your very own page
+          p.subtitle.is-3
+            if subheader
+              | #{subheader}
+            else
+              |All ready in a matter of seconds
+    .hero.is-white.is-medium
+      .hero-body
+          .container
+            .columns.is-vcentered
+              .column
+                h1.title.is-spaced
+                  if title1
+                    | #{title1}
+                  else
+                    | Title 1
+                p.subtitle
+                  if content1
+                    | #{content1}
+                  else
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              .column.has-text-right
+                img(src='http://placehold.it/350x350')
+              |
+    .hero.is-white.is-medium
+      .hero-body
+          .container
+            .columns.is-vcentered
+              .column.has-text-left
+                img(src='http://placehold.it/350x350')
+              |
+              .column
+                h1.title.is-spaced
+                  if title2
+                    | #{title2}
+                  else
+                    | Title 2
+                p.subtitle
+                  if content2
+                    | #{content2}
+                  else
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    .hero.is-white.is-medium
+      .hero-body
+          .container
+            .columns.is-vcentered
+              .column
+                h1.title.is-spaced
+                  if title3
+                    | #{title3}
+                  else
+                    | Title 3
+                p.subtitle
+                  if content3
+                    | #{content3}
+                  else
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              .column.has-text-right
+                img(src='http://placehold.it/350x350')
+              |
+    .hero.is-medium.is-dark.is-bold
+      .hero-body
+          .container.has-text-centered
+            h1.title
+              if ctaText
+                | #{ctaText}
+              else
+                | What are you waiting for?
+    footer.footer
+      .container
+        .content.has-text-centered
+          p
+            strong Create
+            |  your own
+            a(href='http://joshen.me') now
