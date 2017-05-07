@@ -2,9 +2,15 @@ const pug = require('pug')
 const fs = require('fs')
 const data = require('./data.json')
 
-const OUTPUT_DIR = process.argv[2] || 'generatedPug'
+const OUTPUT_DIR = `${__dirname}/generatedPugs`
+if (!fs.existsSync(OUTPUT_DIR)) {
+  console.log('Created generatedPugs folder...')
+  fs.mkdirSync(OUTPUT_DIR)
+}
 
-const OUTPUT_PATH = `${__dirname}/${OUTPUT_DIR}`
+const OUTPUT_FOLDER_NAME = process.argv[2] || 'generatedPug'
+
+const OUTPUT_PATH = `${__dirname}/generatedPugs/${OUTPUT_FOLDER_NAME}`
 if (!fs.existsSync(OUTPUT_PATH)) {
   console.log('Directory does not exists, creating directory...')
   fs.mkdirSync(OUTPUT_PATH)
