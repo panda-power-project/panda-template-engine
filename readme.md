@@ -5,7 +5,7 @@
 This repository is running on:
 
 * [Google Web Starter Kit](https://github.com/google/web-starter-kit)
-* [Pug.js](https://github.com/pugjs/gulp-pug)
+* [Pug.js](https://github.com/pugjs/pug)
 
 Pull the repository, npm install, run `gulp serve` to fire up the Web Starter Kit
 
