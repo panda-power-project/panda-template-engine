@@ -1,4 +1,4 @@
-# [![Web Starter Kit](https://cloud.githubusercontent.com/assets/110953/11445049/f05512ba-9520-11e5-8fdb-8c8eb5f690d0.jpg)](https://github.com/google/web-starter-kit/releases/latest)
+# [![Panda Power](https://img.clipartfest.com/492f473e234752fec7b0e3e67ad72303_cute-panda-clipart-2-cute-panda-clipart-vector_1920-1080.jpeg)](https://github.com/panda-power-project/panda-template-engine)
 
 ## Panda-Template-Engine
 
